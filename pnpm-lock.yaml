@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.1.3
     version: 2.1.3(react@19.0.0-rc-8971381549-20240625)
   '@hiogawa/react-server':
-    specifier: 0.2.7
-    version: 0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
+    specifier: 0.2.8
+    version: 0.2.8(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
   clsx:
     specifier: 2.1.1
     version: 2.1.1
@@ -24,8 +24,8 @@ dependencies:
     specifier: 3.0.0-canary.1
     version: 3.0.0-canary.1
   next:
-    specifier: npm:@hiogawa/react-server-next@0.0.3
-    version: /@hiogawa/react-server-next@0.0.3(@hiogawa/react-server@0.2.7)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1)
+    specifier: npm:@hiogawa/react-server-next@0.0.4
+    version: /@hiogawa/react-server-next@0.0.4(@hiogawa/react-server@0.2.8)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1)
   react:
     specifier: rc
     version: 19.0.0-rc-8971381549-20240625
@@ -378,6 +378,11 @@ packages:
     resolution: {integrity: sha512-IDKaAh0YcJh700uLCrvWtIRCl5sItc3S2rk4IfVJBbms3j+NBDOlVFJnwru+UrMh7VpqU9GlZRsHcHf0NxYE9A==}
     dev: false
 
+  /@edge-runtime/cookies@4.1.1:
+    resolution: {integrity: sha512-ATZLTOpnCUD9ZLNBIXhxOmP/UVx6BfhCjDy9P1YACpD8vrHb5Uw7YlG9RYUl1AMF7Y10TIIN3jhFbUSMiH2J7g==}
+    engines: {node: '>=16'}
+    dev: false
+
   /@edge-runtime/format@2.2.1:
     resolution: {integrity: sha512-JQTRVuiusQLNNLe2W9tnzBlV/GvSVcozLl4XZHk5swnRZ/v6jp8TqR8P7sqmJsQqblDZ3EztcWmLDbhRje/+8g==}
     engines: {node: '>=16'}
@@ -676,15 +681,16 @@ packages:
       react: 19.0.0-rc-8971381549-20240625
     dev: false
 
-  /@hiogawa/react-server-next@0.0.3(@hiogawa/react-server@0.2.7)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
-    resolution: {integrity: sha512-sHpS4ZfVpFhgpj5c4qqP8OD2Hv+AZSd3F/l9RgrKaujWPDbPpGp4V6hhHFgzsk2Z1pqO9EbMVmhJ9bTWMN/hDQ==}
+  /@hiogawa/react-server-next@0.0.4(@hiogawa/react-server@0.2.8)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
+    resolution: {integrity: sha512-5QwlhfhmQGg1InXq8iM5W43nYX0vabdlzpvXUphDX6TkxazTN+VAMDuh9iMtFffdWBwOMBvJPnbkK5SwcQHYPQ==}
     hasBin: true
     peerDependencies:
       '@hiogawa/react-server': '*'
       react: '*'
       vite: '*'
     dependencies:
-      '@hiogawa/react-server': 0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
+      '@edge-runtime/cookies': 4.1.1
+      '@hiogawa/react-server': 0.2.8(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
       '@hiogawa/vite-plugin-ssr-middleware': 0.0.3(vite@5.3.1)
       '@vitejs/plugin-react': 4.3.1(vite@5.3.1)
       react: 19.0.0-rc-8971381549-20240625
@@ -695,8 +701,8 @@ packages:
       - typescript
     dev: false
 
-  /@hiogawa/react-server@0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1):
-    resolution: {integrity: sha512-anZhAE3OsgrV3u2zq2C1DZsEzTN2KDX4riLrfMzWEssWYE4Ciwq3VPpma/I2/YTXv6UqQlI1akXqo0UU5cp1Zg==}
+  /@hiogawa/react-server@0.2.8(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1):
+    resolution: {integrity: sha512-kXsE/21JjpDNMv/mXzXhUif0dXEtiWx2d7ZXDu6EaqViy23XepT4rogk5St7FWN09MXvzFCFnKRrlJYLuhEkpg==}
     peerDependencies:
       react: 19.0.0-rc-c21bcd627b-20240624
       react-dom: 19.0.0-rc-c21bcd627b-20240624
