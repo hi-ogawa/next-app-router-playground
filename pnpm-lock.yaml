@@ -41,6 +41,9 @@ dependencies:
   styled-components:
     specifier: 6.1.8
     version: 6.1.8(react-dom@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)
+  styled-jsx:
+    specifier: 5.1.6
+    version: 5.1.6(@babel/core@7.24.7)(react@19.0.0-rc-8971381549-20240625)
   use-count-up:
     specifier: 3.0.1
     version: 3.0.1(react@19.0.0-rc-8971381549-20240625)
@@ -1971,6 +1974,10 @@ packages:
       slice-ansi: 5.0.0
       string-width: 7.1.0
     dev: true
+
+  /client-only@0.0.1:
+    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
 
   /clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
@@ -5152,6 +5159,24 @@ packages:
       tslib: 2.5.0
     dev: false
 
+  /styled-jsx@5.1.6(@babel/core@7.24.7)(react@19.0.0-rc-8971381549-20240625):
+    resolution: {integrity: sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      babel-plugin-macros: '*'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      babel-plugin-macros:
+        optional: true
+    dependencies:
+      '@babel/core': 7.24.7
+      client-only: 0.0.1
+      react: 19.0.0-rc-8971381549-20240625
+    dev: false
+
   /stylis@4.3.1:
     resolution: {integrity: sha512-EQepAV+wMsIaGVGX1RECzgrcqRRU/0sYOHkeLsZ3fzHaHXZy4DaOOX0vOlGQdlsjkh3mFHAIlVimpwAs4dslyQ==}
     dev: false
@@ -5881,7 +5906,7 @@ packages:
     dev: false
 
   file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz(@hiogawa/react-server@0.2.6)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
-    resolution: {integrity: sha512-5lGbYxghDFZLbs7wwG3stNjTkQdya1eO5wVpLq/E/vJ0eRAQ701gYlm7vus5eNsACasgYGOGeH26YF7NYr5L5A==, tarball: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz}
+    resolution: {integrity: sha512-JoiQBV2Vyl1VT+sveg/AXXJi361+QNMM3nDryYmnQkPzgNTCd9TEYRwWGlmW5OtdUp9cc9sDnWKBfee7y2Z6Yg==, tarball: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz}
     id: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz
     name: '@hiogawa/react-server-next'
     version: 0.0.2

@@ -6,5 +6,5 @@
 
 /** @todo */
 interface RequestInit {
-  next?: any
+  next?: any;
 }

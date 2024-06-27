@@ -31,6 +31,7 @@
     "react-server-dom-webpack": "rc",
     "server-only": "0.0.1",
     "styled-components": "6.1.8",
+    "styled-jsx": "5.1.6",
     "use-count-up": "3.0.1",
     "vercel": "34.0.0",
     "vite": "latest"
