@@ -5906,7 +5906,7 @@ packages:
     dev: false
 
   file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz(@hiogawa/react-server@0.2.6)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
-    resolution: {integrity: sha512-JoiQBV2Vyl1VT+sveg/AXXJi361+QNMM3nDryYmnQkPzgNTCd9TEYRwWGlmW5OtdUp9cc9sDnWKBfee7y2Z6Yg==, tarball: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz}
+    resolution: {integrity: sha512-qsPp/cyOGqJBwYslhN1m8UX+GLyJIo6xsmtXMeBO6BGShmEWwgkxVNp+WsOVWQma3PWdtvZyome6A1JZm9/j+A==, tarball: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz}
     id: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz
     name: '@hiogawa/react-server-next'
     version: 0.0.2
