@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.1.3
     version: 2.1.3(react@19.0.0-rc-8971381549-20240625)
   '@hiogawa/react-server':
-    specifier: file:/home/hiroshi/code/personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz
-    version: file:../../personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
+    specifier: 0.2.7
+    version: 0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
   clsx:
     specifier: 2.1.1
     version: 2.1.1
@@ -24,8 +24,8 @@ dependencies:
     specifier: 3.0.0-canary.1
     version: 3.0.0-canary.1
   next:
-    specifier: file:/home/hiroshi/code/personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz
-    version: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz(@hiogawa/react-server@0.2.6)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1)
+    specifier: npm:@hiogawa/react-server-next@0.0.3
+    version: /@hiogawa/react-server-next@0.0.3(@hiogawa/react-server@0.2.7)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1)
   react:
     specifier: rc
     version: 19.0.0-rc-8971381549-20240625
@@ -674,6 +674,45 @@ packages:
       react: '>= 16'
     dependencies:
       react: 19.0.0-rc-8971381549-20240625
+    dev: false
+
+  /@hiogawa/react-server-next@0.0.3(@hiogawa/react-server@0.2.7)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
+    resolution: {integrity: sha512-sHpS4ZfVpFhgpj5c4qqP8OD2Hv+AZSd3F/l9RgrKaujWPDbPpGp4V6hhHFgzsk2Z1pqO9EbMVmhJ9bTWMN/hDQ==}
+    hasBin: true
+    peerDependencies:
+      '@hiogawa/react-server': '*'
+      react: '*'
+      vite: '*'
+    dependencies:
+      '@hiogawa/react-server': 0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
+      '@hiogawa/vite-plugin-ssr-middleware': 0.0.3(vite@5.3.1)
+      '@vitejs/plugin-react': 4.3.1(vite@5.3.1)
+      react: 19.0.0-rc-8971381549-20240625
+      vite: 5.3.1(@types/node@20.12.7)
+      vite-tsconfig-paths: 4.3.2(typescript@5.4.5)(vite@5.3.1)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
+
+  /@hiogawa/react-server@0.2.7(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1):
+    resolution: {integrity: sha512-anZhAE3OsgrV3u2zq2C1DZsEzTN2KDX4riLrfMzWEssWYE4Ciwq3VPpma/I2/YTXv6UqQlI1akXqo0UU5cp1Zg==}
+    peerDependencies:
+      react: 19.0.0-rc-c21bcd627b-20240624
+      react-dom: 19.0.0-rc-c21bcd627b-20240624
+      react-server-dom-webpack: 19.0.0-rc-c21bcd627b-20240624
+      vite: '*'
+    dependencies:
+      '@hiogawa/transforms': 0.0.0
+      '@hiogawa/vite-plugin-ssr-middleware': 0.0.3(vite@5.3.1)
+      '@tanstack/history': 1.40.0
+      es-module-lexer: 1.4.1
+      fast-glob: 3.3.2
+      react: 19.0.0-rc-8971381549-20240625
+      react-dom: 19.0.0-rc-8971381549-20240625(react@19.0.0-rc-8971381549-20240625)
+      react-server-dom-webpack: 19.0.0-rc-8971381549-20240625(react-dom@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(webpack@5.92.1)
+      use-sync-external-store: 1.2.2(react@19.0.0-rc-8971381549-20240625)
+      vite: 5.3.1(@types/node@20.12.7)
     dev: false
 
   /@hiogawa/transforms@0.0.0:
@@ -5883,49 +5922,4 @@ packages:
 
   /zimmerframe@1.1.2:
     resolution: {integrity: sha512-rAbqEGa8ovJy4pyBxZM70hg4pE6gDgaQ0Sl9M3enG3I0d6H4XSAM3GeNGLKnsBpuijUow064sf7ww1nutC5/3w==}
-    dev: false
-
-  file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz(@hiogawa/react-server@0.2.6)(react@19.0.0-rc-8971381549-20240625)(typescript@5.4.5)(vite@5.3.1):
-    resolution: {integrity: sha512-THD8IZAnZdoppnuHDUskVS5PUL4t8r5HE9r6+DgVK9ck8LVngjwud4jNSG5yj32e+KQLGY3QWpCrruXE1tCvxg==, tarball: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz}
-    id: file:../../personal/vite-plugins/packages/react-server-next/hiogawa-react-server-next-0.0.2.tgz
-    name: '@hiogawa/react-server-next'
-    version: 0.0.2
-    hasBin: true
-    peerDependencies:
-      '@hiogawa/react-server': '*'
-      react: '*'
-      vite: '*'
-    dependencies:
-      '@hiogawa/react-server': file:../../personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1)
-      '@hiogawa/vite-plugin-ssr-middleware': 0.0.3(vite@5.3.1)
-      '@vitejs/plugin-react': 4.3.1(vite@5.3.1)
-      react: 19.0.0-rc-8971381549-20240625
-      vite: 5.3.1(@types/node@20.12.7)
-      vite-tsconfig-paths: 4.3.2(typescript@5.4.5)(vite@5.3.1)
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: false
-
-  file:../../personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz(react-dom@19.0.0-rc-8971381549-20240625)(react-server-dom-webpack@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(vite@5.3.1):
-    resolution: {integrity: sha512-vAJy925H5R4Keyf6YItCh7Zg4XI8g5bycb1jt9feO+D7upcYWiXQbtJSdin4/QwN+4VIbpN+9Pxg9YyuwSjpeA==, tarball: file:../../personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz}
-    id: file:../../personal/vite-plugins/packages/react-server/hiogawa-react-server-0.2.6.tgz
-    name: '@hiogawa/react-server'
-    version: 0.2.6
-    peerDependencies:
-      react: 19.0.0-rc-c21bcd627b-20240624
-      react-dom: 19.0.0-rc-c21bcd627b-20240624
-      react-server-dom-webpack: 19.0.0-rc-c21bcd627b-20240624
-      vite: '*'
-    dependencies:
-      '@hiogawa/transforms': 0.0.0
-      '@hiogawa/vite-plugin-ssr-middleware': 0.0.3(vite@5.3.1)
-      '@tanstack/history': 1.40.0
-      es-module-lexer: 1.4.1
-      fast-glob: 3.3.2
-      react: 19.0.0-rc-8971381549-20240625
-      react-dom: 19.0.0-rc-8971381549-20240625(react@19.0.0-rc-8971381549-20240625)
-      react-server-dom-webpack: 19.0.0-rc-8971381549-20240625(react-dom@19.0.0-rc-8971381549-20240625)(react@19.0.0-rc-8971381549-20240625)(webpack@5.92.1)
-      use-sync-external-store: 1.2.2(react@19.0.0-rc-8971381549-20240625)
-      vite: 5.3.1(@types/node@20.12.7)
     dev: false
