@@ -29,8 +29,8 @@ const configJson = {
 };
 
 const vcConfigJson = {
-  runtime: "edge",
-  entrypoint: "index.js",
+  runtime: "nodejs20.x",
+  handler: "index.js",
 };
 
 async function main() {
