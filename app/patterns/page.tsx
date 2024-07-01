@@ -11,6 +11,7 @@ const items = [
     name: 'Breadcrumbs',
     slug: 'breadcrumbs',
     description: 'Shared server-side Breadcrumb UI using Parallel Routes',
+    wip: true,
   },
   {
     name: 'Updating URL search params',
@@ -34,6 +35,7 @@ export default function Page() {
             >
               <div className="font-medium text-gray-200 group-hover:text-gray-50">
                 {item.name}
+                {item.wip && <sup> wip</sup>}
               </div>
 
               {item.description ? (

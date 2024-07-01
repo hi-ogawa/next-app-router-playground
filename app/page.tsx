@@ -24,6 +24,7 @@ export default function Page() {
                     >
                       <div className="font-medium text-gray-200 group-hover:text-gray-50">
                         {item.name}
+                        {item.wip && <sup> wip</sup>}
                       </div>
 
                       {item.description ? (
