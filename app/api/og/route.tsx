@@ -5,7 +5,9 @@ import type { ReactElement } from 'react';
 export const runtime = 'edge';
 
 const interSemiBold = fetch(
-  new URL('./Inter-SemiBold.ttf', import.meta.url),
+  // TODO: unsupported server asset url
+  // new URL('./Inter-SemiBold.ttf', import.meta.url),
+  URL.createObjectURL(new Blob()),
 ).then((res) => res.arrayBuffer());
 
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
