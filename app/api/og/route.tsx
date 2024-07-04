@@ -7,7 +7,7 @@ export const runtime = 'edge';
 const interSemiBold = fetch(
   // TODO: unsupported server asset url
   // new URL('./Inter-SemiBold.ttf', import.meta.url),
-  URL.createObjectURL(new Blob()),
+  'data:,todo',
 ).then((res) => res.arrayBuffer());
 
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
