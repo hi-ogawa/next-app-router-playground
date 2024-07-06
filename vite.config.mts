@@ -6,6 +6,25 @@ export default defineConfig((env) => ({
     next({
       // ssg is opt-in for now
       prerender: (_, presets) => presets.generateStaticParams(),
+      plugins: [
+        {
+          name: 'config',
+          apply: 'serve',
+          config() {
+            return {
+              ssr: {
+                optimizeDeps: {
+                  include: [
+                    '@heroicons/react/24/outline',
+                    '@heroicons/react/24/solid',
+                  ],
+                },
+                external: ['date-fns', 'dinero.js'],
+              },
+            };
+          },
+        },
+      ],
     }),
   ],
   ssr: {
