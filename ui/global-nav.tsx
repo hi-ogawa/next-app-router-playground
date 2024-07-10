@@ -97,6 +97,7 @@ function GlobalNavItem({
       )}
     >
       {item.name}
+      {item.wip && <sup> wip</sup>}
     </Link>
   );
 }
