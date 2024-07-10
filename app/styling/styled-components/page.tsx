@@ -1,6 +1,8 @@
 'use client';
 
-import styled from 'styled-components';
+// https://github.com/styled-components/styled-components/issues/4268
+// https://github.com/styled-components/styled-components/issues/4275
+import { styled } from 'styled-components';
 
 const Container = styled.div`
   display: grid;
