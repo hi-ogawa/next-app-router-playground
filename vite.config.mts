@@ -4,6 +4,8 @@ import { defineConfig } from 'vite';
 export default defineConfig((env) => ({
   plugins: [
     next({
+      // deploy everything to edge
+      adapter: process.env['VERCEL'] ? 'vercel-edge' : undefined,
       // ssg is opt-in for now
       prerender: (_, presets) => presets.generateStaticParams(),
     }),
