@@ -7,7 +7,7 @@ export default defineConfig((env) => ({
       // deploy everything to edge
       adapter: process.env['VERCEL'] ? 'vercel-edge' : undefined,
       // ssg is opt-in for now
-      prerender: (_, presets) => presets.generateStaticParams(),
+      prerender: async (_, presets) => ['/', ...(await presets.generateStaticParams())],
     }),
   ],
   ssr: {
