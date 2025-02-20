@@ -18,7 +18,7 @@ export default function Byline({ className }: { className: string }) {
         <div className="text-sm text-gray-400">
           <a
             className="underline decoration-dotted underline-offset-4 transition-colors hover:text-gray-300"
-            href="https://github.com/vercel/app-playground"
+            href="https://github.com/hi-ogawa/next-app-router-playground/pull/1"
             target="_blank"
             rel="noreferrer"
           >
@@ -27,7 +27,7 @@ export default function Byline({ className }: { className: string }) {
           {' or '}
           <a
             className="underline decoration-dotted underline-offset-4 transition-colors hover:text-gray-300"
-            href="https://vercel.com/templates/next.js/app-directory"
+            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhi-ogawa%2Fnext-app-router-playground%2Ftree%2Fchore-vite"
             target="_blank"
             rel="noreferrer"
           >

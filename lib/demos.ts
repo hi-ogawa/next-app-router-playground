@@ -2,6 +2,7 @@ export type Item = {
   name: string;
   slug: string;
   description?: string;
+  wip?: boolean;
 };
 
 export const demos: { name: string; items: Item[] }[] = [
@@ -22,6 +23,7 @@ export const demos: { name: string; items: Item[] }[] = [
         name: 'Parallel Routes',
         slug: 'parallel-routes',
         description: 'Render multiple pages in the same layout',
+        wip: true,
       },
     ],
   },
@@ -69,6 +71,7 @@ export const demos: { name: string; items: Item[] }[] = [
         name: 'Incremental Static Regeneration',
         slug: 'isr',
         description: 'Get the best of both worlds between static & dynamic',
+        wip: true,
       },
     ],
   },
